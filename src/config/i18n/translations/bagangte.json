@@ -1,0 +1,70 @@
+{
+  "common": {
+    "appName": "GoPack",
+    "loading": "A pɛ lɔ̀...",
+    "error": "Fɔ̀p",
+    "success": "A yɔ̀ʼ mbwɔ́",
+    "save": "Lɔ̀ʼ",
+    "cancel": "Kwí",
+    "delete": "Sɔ́",
+    "edit": "Sèt",
+    "create": "Nàʼ",
+    "submit": "Fɛ́",
+    "back": "Pɛ̀n",
+    "close": "Kwɛ́t",
+    "language": "Ncàŋ"
+  },
+  "auth": {
+    "login": "Nù",
+    "logout": "Tɔ́",
+    "signup": "Cwèt dzə̀",
+    "email": "Émɛ̀l",
+    "password": "Nsɔ̀ŋ",
+    "confirmPassword": "Mbwɔ́ʼ nsɔ̀ŋ",
+    "forgotPassword": "Ò líʼí nsɔ̀ŋ?",
+    "createAccount": "Nàʼ kɔ̀ntì",
+    "alreadyHaveAccount": "Ò pɛ̀ kɔ̀ntì?",
+    "dontHaveAccount": "Ò ká pɛ̀ kɔ̀ntì?"
+  },
+  "user": {
+    "role": {
+      "sender": "Ntúm",
+      "bidder": "Nkə́"
+    }
+  },
+  "profile": {
+    "viewProfile": "Yɛ́n mbì",
+    "editProfile": "Sèt mbì",
+    "tabs": {
+      "history": "Mbɛ̀mbɛ̀lɛ̀",
+      "details": "Mɔ̀m",
+      "payments": "Mkàʼ",
+      "settings": "Nsèt"
+    },
+    "address": {
+      "title": "Vɔ̀m",
+      "street": "Màŋgə̀",
+      "city": "Ntɛ̀ʼ",
+      "state": "Mbɔ̀ŋ",
+      "zip": "Nɔ́mbà vɔ̀m",
+      "country": "Nsì"
+    }
+  },
+  "delivery": {
+    "title": "Nkə́ bìwɔ̀m",
+    "newRequest": "Cwèt nkə́",
+    "tracking": "Yɛ́n nkə́",
+    "status": {
+      "pending": "A pɛ yɛ́n",
+      "inProgress": "A pɛ kə̀",
+      "completed": "A mɛ̀n",
+      "cancelled": "A kwí"
+    }
+  },
+  "integration": {
+    "title": "Nsèt",
+    "connect": "Cwèt",
+    "disconnect": "Kàʼ",
+    "settings": "Nsèt"
+  }
+}

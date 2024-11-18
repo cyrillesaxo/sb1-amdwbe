@@ -1,0 +1,46 @@
+{
+  "common": {
+    "appName": "GoPack",
+    "loading": "Iyalayisha...",
+    "error": "Iphutha",
+    "success": "Impumelelo",
+    "save": "Londoloza",
+    "cancel": "Khansela",
+    "delete": "Susa",
+    "edit": "Hlela",
+    "create": "Dala",
+    "submit": "Thumela",
+    "back": "Emuva",
+    "close": "Vala",
+    "language": "Ulimi"
+  },
+  "auth": {
+    "login": "Ngena",
+    "logout": "Phuma",
+    "signup": "Bhalisela",
+    "email": "I-imeyili",
+    "password": "Iphasiwedi",
+    "confirmPassword": "Qinisekisa Iphasiwedi",
+    "forgotPassword": "Ukhohlwe iphasiwedi?",
+    "createAccount": "Dala i-akhawunti",
+    "alreadyHaveAccount": "Usuvele unayo i-akhawunti?",
+    "dontHaveAccount": "Awunayo i-akhawunti?"
+  },
+  "user": {
+    "role": {
+      "sender": "Umthumeli",
+      "bidder": "Umthuthi"
+    }
+  },
+  "delivery": {
+    "title": "Ukuphatha Ukuthumela",
+    "newRequest": "Isicelo Esisha Sokuthumela",
+    "tracking": "Ukulandela Ukuthumela",
+    "status": {
+      "pending": "Kulindile",
+      "inProgress": "Kuyaqhubeka",
+      "completed": "Kuqediwe",
+      "cancelled": "Kukhanseliwe"
+    }
+  }
+}

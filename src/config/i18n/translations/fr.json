@@ -1,0 +1,624 @@
+{
+  "common": {
+    "appName": "GoPack",
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "create": "Créer",
+    "submit": "Soumettre",
+    "back": "Retour",
+    "close": "Fermer",
+    "language": "Langue",
+    "disconnect": "Déconnecter",
+    "learnMore": "En Savoir Plus"
+  },
+  "auth": {
+    "login": "Connexion",
+    "logout": "Déconnexion",
+    "signup": "S'inscrire",
+    "email": "Email",
+    "emailPlaceholder": "Entrez votre email",
+    "password": "Mot de passe",
+    "passwordPlaceholder": "Entrez votre mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "confirmPasswordPlaceholder": "Confirmez votre mot de passe",
+    "fullName": "Nom complet",
+    "fullNamePlaceholder": "Entrez votre nom complet",
+    "forgotPassword": "Mot de passe oublié ?",
+    "createAccount": "Créer un compte",
+    "signupDescription": "Créez un compte pour commencer",
+    "alreadyHaveAccount": "Déjà un compte ? Connectez-vous",
+    "dontHaveAccount": "Pas de compte ? Inscrivez-vous",
+    "continueWith": "Ou continuer avec",
+    "privacyNotice": "En continuant, vous acceptez nos Conditions et notre Politique de confidentialité",
+    "errors": {
+      "passwordMismatch": "Les mots de passe ne correspondent pas",
+      "requiredFields": "Veuillez remplir tous les champs requis",
+      "socialLoginFailed": "La connexion sociale a échoué"
+    }
+  },
+  "user": {
+    "role": {
+      "title": "Type de compte",
+      "sender": "Expéditeur",
+      "bidder": "Livreur"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Service de Livraison Rapide et Fiable",
+      "subtitle": "Des colis aux conteneurs, nous livrons tout",
+      "cta": "Envoyer un Colis"
+    },
+    "features": {
+      "realTimeTracking": {
+        "title": "Suivi en Temps Réel",
+        "description": "Suivez vos livraisons en temps réel avec notre système GPS avancé",
+        "tooltip": "Recevez des mises à jour en direct, des heures d'arrivée estimées et des notifications instantanées"
+      },
+      "securePayments": {
+        "title": "Paiements Sécurisés",
+        "description": "Plusieurs options de paiement sécurisées, y compris le mobile money",
+        "tooltip": "Transactions cryptées de bout en bout avec protection contre la fraude"
+      },
+      "verifiedProviders": {
+        "title": "Partenaires Vérifiés",
+        "description": "Tous nos partenaires de livraison sont vérifiés et évalués",
+        "tooltip": "Professionnels de la livraison formés et vérifiés"
+      },
+     "search": {
+      "title": "Suivez votre colis",
+      "entertrackingumber": "Entrez le numéro de suivi",
+      "track": "Suivre"
+    }
+    },
+    "trust": {
+      "title": "Approuvé par des Milliers",
+      "subtitle": "Rejoignez notre communauté de clients satisfaits qui nous font confiance pour leurs livraisons",
+      "stats": {
+        "success": "99,9%",
+        "successLabel": "Taux de Réussite des Livraisons",
+        "users": "15K+",
+        "usersLabel": "Utilisateurs Actifs",
+        "rating": "4,9/5",
+        "ratingLabel": "Note Client"
+      }
+    }
+  },
+  "freightType": {
+    "standardParcel": "Colis Standard",
+    "smallToMediumPackages": "Pour les petits à moyens colis",
+    "fullContainer": "Conteneur Complet",
+    "containerSizes": "Conteneurs de 20 et 40 pieds",
+    "itemBasedFreight": "Fret Basé sur les Articles",
+    "bulkItemsAndCargo": "Pour articles en vrac et cargaison"
+  },
+  "delivery": {
+    "title": "Créer une Demande de Livraison",
+    "subtitle": "Remplissez les détails de votre livraison",
+    "moreInformation": "Plus d'informations",
+    "selectType": "Sélectionnez le type de livraison",
+    "locationDetails": "Détails de l'Emplacement",
+    "pickupLocation": "Lieu de Ramassage",
+    "dropoffLocation": "Lieu de Livraison",
+    "enterPickupAddress": "Entrez l'adresse de ramassage",
+    "enterDropoffAddress": "Entrez l'adresse de destination",
+    "packagePicture": "Photo du Colis",
+    "uploadPicture": "Télécharger une photo",
+    "pictureRequirements": "PNG, JPG jusqu'à 5MB",
+    "removePicture": "Supprimer la photo",
+    "weight": "Poids (kg)",
+    "description": "Description",
+            "customs": {
+                "type": "Type",
+                "commercial": "Commercial",
+                "value": "Valeur",
+                "valuePlaceholder": "Entrez la valeur",
+                "description": "Description"
+            },
+            "document": {
+                "upload": "Télécharger le document",
+                "allowedTypes": "Types de fichiers autorisés",
+               "title":"Télécharger le document"
+            },
+            "quote": {
+                "service": "Service",
+                "standard": "Standard",
+                "weight": "Poids",
+                "distance": "Distance"
+            },
+            "carrier": {
+                "title": "Transporteur",
+                "nearbyLocations": "Emplacements à proximité"
+            },
+    
+    "packageDetails": {
+      "title": "Détails du Colis",
+      "weight": "Poids (kg)",
+      "value": "Valeur (€)",
+      "specialHandling": "Manutention Spéciale",
+      "required": "Requis",
+      "description": "Description du colis",
+      "enterWeight": "Entrez le poids du colis",
+      "enterDescription": "Décrivez votre colis"
+    },
+    "packagePreview": "Aperçu du colis",
+    "clickToUpload": "Cliquez pour télécharger",
+    "uploadRequirements": "PNG, JPG jusqu'à 5 Mo",
+    "fileSizeAlert": "La taille du fichier doit être inférieure à 5 Mo",
+    "scheduleDetails": "Détails de la planification",
+    "deliveryDate": "Date de livraison",
+    "deliveryTime": "Heure de livraison",
+    "commodityType": "Type de marchandise",
+    "totalWeight": "Poids total (kg)",
+    "dimensions": {
+      "title": "Dimensions",
+      "length": "Longueur",
+      "width": "Largeur",
+      "height": "Hauteur"
+    },
+    "quantity": "Quantité",
+    "freightDetails": "Détails du fret",
+    "containerSize": "Taille du conteneur",
+    "selectSize": "Sélectionner la taille",
+    "container20dv": "20' DV (Dry Van)",
+    "container40dv": "40' DV (Dry Van)",
+    "container40hc": "40' HC (High Cube)",
+    "container45hc": "45' HC (High Cube)",
+    "numberOfContainers": "Nombre de conteneurs",
+    "weightPerContainer": "Poids par conteneur (kg)",
+    "createRequest": "Créer la Demande de Livraison",
+    "fillDetails": "Remplissez les détails de votre livraison",
+    "selectType": "Sélectionnez le Type de Livraison",
+    "types": {
+      "title": "Choisissez votre type de livraison",
+      "standard": {
+        "title": "Standard",
+        "description": "Service de livraison régulier",
+        "time": "24-48 heures",
+        "price": "5 000 FCFA"
+      },
+      "express": {
+        "title": "Express",
+        "description": "Livraison le jour même",
+        "time": "2-4 heures",
+        "price": "7 500 FCFA"
+      },
+      "scheduled": {
+        "title": "Programmée",
+        "description": "Choisissez votre heure de livraison",
+        "time": "Vous décidez",
+        "price": "À partir de 6 000 FCFA"
+      }
+    },
+    "features": {
+      "realTimeTracking": "Suivi en temps réel",
+      "insurance": "Assurance jusqu'à 100 000 FCFA",
+      "multipleVehicles": "Options de véhicules multiples",
+      "priorityHandling": "Traitement prioritaire",
+      "dedicatedDriver": "Chauffeur dédié",
+      "liveSupport": "Support chat en direct",
+      "flexibleScheduling": "Programmation flexible",
+      "allPackageTypes": "Tous types de colis",
+      "containerShipping": "Transport de conteneurs"
+    }
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Choisissez parmi notre large gamme d'options de livraison",
+    "transportation": {
+      "title": "Services de Transport",
+      "hourly": {
+        "name": "À l'heure",
+        "description": "Réservez à l'heure"
+      },
+      "reserve": {
+        "name": "Réserver",
+        "description": "Planifiez un trajet futur"
+      },
+      "group": {
+        "name": "Trajet en groupe",
+        "description": "Voyagez ensemble"
+      }
+    },
+    "delivery": {
+      "title": "Services de Livraison",
+	  "subtitle": "Remplissez les détails de votre livraison",
+      "moreInformation": "Plus d'informations",
+     "selectType": "Sélectionnez le type de livraison",
+      "food": {
+        "name": "Nourriture",
+        "description": "Livraison de restaurant"
+      },
+      "grocery": {
+        "name": "Épicerie",
+        "description": "Livraison d'épicerie"
+      },
+      "alcohol": {
+        "name": "Alcool",
+        "description": "Livraison d'alcool"
+      },
+      "convenience": {
+        "name": "Dépanneur",
+        "description": "Articles de dépanneur"
+      },
+      "health": {
+        "name": "Santé",
+        "description": "Pharmacie et santé"
+      },
+      "personalCare": {
+        "name": "Soins personnels",
+        "description": "Articles de soins personnels"
+      },
+      "baby": {
+        "name": "Bébé",
+        "description": "Articles pour bébé"
+      },
+      "gourmet": {
+        "name": "Gourmet",
+        "description": "Aliments spécialisés"
+      },
+      "petSupplies": {
+        "name": "Animaux",
+        "description": "Nourriture et fournitures pour animaux"
+      },
+      "flowers": {
+        "name": "Fleurs",
+        "description": "Livraison de fleurs"
+      },
+      "retail": {
+        "name": "Commerce",
+        "description": "Magasins de détail"
+      },
+      "electronics": {
+        "name": "Électronique",
+        "description": "Électronique et gadgets"
+      }
+    },
+    "additional": {
+      "title": "Services Supplémentaires",
+      "package": {
+        "name": "Colis",
+        "description": "Envoyez des colis"
+      },
+      "storePickup": {
+        "name": "Ramassage en Magasin",
+        "description": "Ramassage dans n'importe quel magasin"
+      }
+    }
+  },
+  "account": {
+    "profile": {
+      "verified": "Vérifié",
+      "goldMember": "Membre Or"
+    },
+    "stats": {
+      "deliveries": "Livraisons",
+      "points": "Points",
+      "totalSpent": "Total Dépensé"
+    },
+    "menu": {
+      "help": {
+        "title": "Aide",
+        "subtitle": "Support disponible 24/7"
+      },
+      "payment": {
+        "title": "Paiement",
+        "subtitle": "3 méthodes de paiement"
+      },
+      "activity": {
+        "title": "Activité",
+        "subtitle": "15 livraisons récentes"
+      },
+      "premium": {
+        "title": "GoPack Premium",
+        "subtitle": "Essayez gratuitement pendant 4 semaines"
+      },
+      "safety": {
+        "title": "Vérification de sécurité",
+        "subtitle": "Découvrez comment rendre les livraisons plus sûres"
+      },
+      "privacy": {
+        "title": "Vérification de confidentialité",
+        "subtitle": "Faites une visite interactive de vos paramètres de confidentialité"
+      },
+      "referral": {
+        "title": "Invitez des amis sur GoPack",
+        "subtitle": "Obtenez 50% de réduction sur 2 livraisons"
+      }
+    }
+  },
+  "navigation": {
+    "home": "Accueil",
+    "services": "Services",
+    "activity": "Activité",
+    "account": "Compte",
+    "document": "Téléchargement de Documents",
+    "quote": "Devis",
+    "customs": "Informations Douanières",
+    "carrier": "Emplacements des Transporteurs",
+    "business": "Affaires",
+    "eco": "Éco",
+    "marketplace": "Marché"
+  },
+  "activity": {
+    "activeDelivery": {
+      "title": "Livraison Active",
+      "estimatedDelivery": "Livraison Estimée",
+      "delayed": "Retardé",
+      "trackDelivery": "Suivre la Livraison"
+    },
+    "status": {
+      "scheduled": "PROGRAMMÉ",
+      "pickedUp": "RÉCUPÉRÉ",
+      "delivered": "LIVRÉ",
+      "pending": "En attente"
+    },
+    "delayNotice": "Cette expédition arrive plus tard que prévu initialement.",
+    "quickActions": {
+      "documentUpload": "Téléchargement de Documents",
+      "quote": "Devis",
+      "customsInfo": "Informations Douanières",
+      "carrierLocations": "Emplacements des Transporteurs"
+    },
+    "shipmentDetails": {
+      "shipper": "EXPÉDITEUR",
+      "consignee": "DESTINATAIRE",
+      "hours": "09:00 - 17:00",
+      "phone": "Téléphone"
+    }
+  },
+  "help": {
+    "title": "Aide & Support",
+    "topics": {
+      "liveChat": {
+        "title": "Chat en Direct",
+        "description": "Chattez avec notre équipe support",
+        "status": "Disponible"
+      },
+      "phone": {
+        "title": "Support Téléphonique",
+        "description": "+237 699 123 456",
+        "status": "24/7"
+      },
+      "email": {
+        "title": "Support Email",
+        "description": "support@gopack.com",
+        "status": "< 24h"
+      },
+      "faqs": {
+        "title": "FAQs",
+        "description": "Trouvez des réponses rapides",
+        "badge": "Populaire"
+      },
+      "helpCenter": {
+        "title": "Centre d'Aide",
+        "description": "Guides et tutoriels détaillés"
+      }
+    },
+    "emergency": {
+      "title": "Support d'Urgence",
+      "description": "Pour les problèmes urgents nécessitant une assistance immédiate",
+      "button": "Contacter le Support d'Urgence"
+    }
+  },
+  "payment": {
+    "title": "Méthodes de Paiement",
+    "subtitle": "Gérez vos options de paiement",
+    "addNew": "Ajouter",
+    "methods": {
+      "title": "Vos Méthodes de Paiement",
+      "primary": "Principal",
+      "balance": "Solde"
+    },
+    "transactions": {
+      "title": "Transactions Récentes",
+      "date": "Date",
+      "amount": "Montant",
+      "status": "Statut",
+      "type": {
+        "payment": "Paiement",
+        "refund": "Remboursement"
+      }
+    },
+    "addPayment": {
+      "title": "Ajouter une Méthode de Paiement",
+      "cancel": "Annuler",
+      "add": "Ajouter la Méthode"
+    }
+  },
+  "privacy": {
+    "title": "Paramètres de Confidentialité",
+    "subtitle": "Contrôlez vos préférences de confidentialité et de sécurité",
+    "sections": {
+      "accountPrivacy": {
+        "title": "Confidentialité du Compte",
+        "description": "Contrôlez qui peut voir votre profil et votre activité",
+        "options": {
+          "profileVisibility": "Visibilité du profil",
+          "activityStatus": "Statut d'activité"
+        }
+      },
+      "dataVisibility": {
+        "title": "Visibilité des Données",
+        "description": "Gérez quelles informations sont visibles pour les autres",
+        "options": {
+          "phoneNumber": "Numéro de téléphone",
+          "emailAddress": "Adresse e-mail"
+        }
+      },
+      "communication": {
+        "title": "Communication",
+        "description": "Contrôlez comment nous communiquons avec vous",
+        "options": {
+          "marketingEmails": "Emails marketing",
+          "pushNotifications": "Notifications push"
+        }
+      },
+      "dataSharing": {
+        "title": "Partage de Données",
+        "description": "Gérez comment vos données sont partagées",
+        "options": {
+          "locationSharing": "Partage de localisation",
+          "usageStats": "Statistiques d'utilisation"
+        }
+      }
+    },
+    "dataExport": {
+      "title": "Télécharger Vos Données",
+      "description": "Obtenez une copie de vos données personnelles dans un format lisible par machine",
+      "button": "Demander l'Export des Données"
+    }
+  },
+  "premium": {
+    "title": "GoPack Premium",
+    "tryFree": {
+      "title": "Essayez Premium Gratuitement",
+      "subtitle": "Profitez de 4 semaines d'avantages Premium sans frais",
+      "cta": "Commencer l'Essai Gratuit"
+    },
+    "features": {
+      "prioritySupport": {
+        "title": "Support Prioritaire",
+        "description": "Service client dédié 24h/24 et 7j/7"
+      },
+      "flexibleScheduling": {
+        "title": "Planification Flexible",
+        "description": "Planifiez des livraisons jusqu'à 30 jours à l'avance"
+      },
+      "premiumBenefits": {
+        "title": "Avantages Premium",
+        "description": "Remises et récompenses exclusives"
+      },
+      "expressDelivery": {
+        "title": "Livraison Express",
+        "description": "Mise en relation prioritaire avec les chauffeurs à proximité"
+      }
+    },
+    "plans": {
+      "title": "Plans Premium",
+      "monthly": {
+        "name": "Mensuel",
+        "billing": "Facturation mensuelle",
+        "price": "4 999 FCFA",
+        "period": "/mois"
+      },
+      "annual": {
+        "name": "Annuel",
+        "billing": "Facturation annuelle",
+        "price": "47 999 FCFA",
+        "period": "/an",
+        "savings": "Économisez 20%"
+      }
+    }
+  },
+  "referral": {
+    "title": "Inviter des Amis",
+    "shareTitle": "Partagez l'amour",
+    "shareSubtitle": "Invitez des amis à GoPack et recevez tous les deux des récompenses",
+    "rewards": {
+      "youGet": {
+        "title": "Vous Recevez",
+        "description": "50% de réduction sur vos 2 prochaines livraisons"
+      },
+      "theyGet": {
+        "title": "Ils Reçoivent",
+        "description": "50% de réduction sur leur première livraison"
+      }
+    },
+    "code": {
+      "title": "Votre Code de Parrainage",
+      "shareVia": "Partager via"
+    }
+  },
+  "safety": {
+    "title": "Vérification de Sécurité",
+    "subtitle": "Complétez les tâches de sécurité pour protéger votre compte",
+    "score": {
+      "title": "Score de Sécurité",
+      "progress": "2/6 Complété"
+    },
+    "checks": [
+      {
+        "title": "Vérifiez votre identité",
+        "description": "Ajoutez une pièce d'identité officielle pour vérifier votre compte",
+        "status": "completed"
+      },
+      {
+        "title": "Activez l'authentification à deux facteurs",
+        "description": "Ajoutez une couche de sécurité supplémentaire à votre compte",
+        "status": "pending"
+      },
+      {
+        "title": "Configurez les contacts d'urgence",
+        "description": "Ajoutez des contacts de confiance pour les urgences",
+        "status": "completed"
+      },
+      {
+        "title": "Consultez les directives de sécurité",
+        "description": "Découvrez nos politiques et directives de sécurité",
+        "status": "pending"
+      },
+      {
+        "title": "Complétez le quiz de sécurité",
+        "description": "Testez vos connaissances des procédures de sécurité",
+        "status": "pending"
+      },
+      {
+        "title": "Configurez les lieux de confiance",
+        "description": "Ajoutez vos lieux fréquemment visités",
+        "status": "pending"
+      }
+    ],
+    "status": {
+      "completed": "Complété",
+      "pending": "Compléter Maintenant"
+    }
+  },
+  "serviceDetails": {
+    "search": {
+      "placeholder": "Rechercher des magasins",
+      "filters": "Filtres",
+      "deliveryTime": "Temps de Livraison",
+      "rating": "Évaluation"
+    },
+    "store": {
+      "deliveryFee": "livraison",
+      "offers": {
+        "firstOrder": "10% de réduction sur la première commande"
+      },
+      "tags": {
+        "organic": "Bio",
+        "fresh": "Frais",
+        "specialty": "Spécialité"
+      }
+    },
+    "noResults": {
+      "title": "Aucun magasin trouvé",
+      "message": "Aucun magasin ne correspond à votre recherche."
+    }
+  },
+  "notifications": {
+    "title": "Notifications",
+    "empty": "Aucune notification",
+    "markAllRead": "Tout marquer comme lu",
+    "clearAll": "Tout effacer",
+    "markAsRead": "Marquer comme lu",
+    "delete": "Supprimer",
+    "viewDetails": "Voir les détails",
+    "selectAll": "Tout sélectionner",
+    "unselectAll": "Tout désélectionner",
+    "total": "notifications",
+    "new": "Nouveau",
+    "types": {
+      "delivery": "Mise à jour de livraison",
+      "payment": "Mise à jour de paiement",
+      "system": "Mise à jour système",
+      "emergency": "Alerte d'urgence"
+    }
+  }  
+}        

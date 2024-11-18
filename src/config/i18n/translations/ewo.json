@@ -1,0 +1,70 @@
+{
+  "common": {
+    "appName": "GoPack",
+    "loading": "Á ngá bɔ...",
+    "error": "Mfém",
+    "success": "É ngá ke mvɔ́é",
+    "save": "Bághélé",
+    "cancel": "Tɔ́bɔ",
+    "delete": "Sílí",
+    "edit": "Kɔ́lɔ",
+    "create": "Fók",
+    "submit": "Lóm",
+    "back": "Búlú",
+    "close": "Dìb",
+    "language": "Nkɔ́bɔ́"
+  },
+  "auth": {
+    "login": "Nyìí",
+    "logout": "Kóló",
+    "signup": "Tílí dzóé",
+    "email": "Émél",
+    "password": "Nsímá",
+    "confirmPassword": "Bɔ́mɔ́ nsímá",
+    "forgotPassword": "Ò vìní nsímá?",
+    "createAccount": "Fók kɔ́ntí",
+    "alreadyHaveAccount": "Ò bélé kɔ́ntí?",
+    "dontHaveAccount": "Ò sès kɔ́ntí?"
+  },
+  "user": {
+    "role": {
+      "sender": "Nlómí",
+      "bidder": "Nkéní"
+    }
+  },
+  "profile": {
+    "viewProfile": "Dɔ́ŋɔ kálát",
+    "editProfile": "Kɔ́lɔ kálát",
+    "tabs": {
+      "history": "Mbémbélé",
+      "details": "Mám",
+      "payments": "Méyób",
+      "settings": "Mékɔ́lɔ"
+    },
+    "address": {
+      "title": "Vóm",
+      "street": "Zéŋ",
+      "city": "Dzáá",
+      "state": "Mbóg",
+      "zip": "Nɔ́mrɔ́ vóm",
+      "country": "Nnam"
+    }
+  },
+  "delivery": {
+    "title": "Nkéní bìwòm",
+    "newRequest": "Síli nkéní",
+    "tracking": "Béŋ nkéní",
+    "status": {
+      "pending": "Á ngá béŋ",
+      "inProgress": "Á ngá kè",
+      "completed": "É mána",
+      "cancelled": "É tɔ́bɔ"
+    }
+  },
+  "integration": {
+    "title": "Mékɔ́lɔ",
+    "connect": "Kɔ́lɔ",
+    "disconnect": "Kálá",
+    "settings": "Mékɔ́lɔ"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "common": {
+    "appName": "GoPack",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "create": "Crear",
+    "submit": "Enviar",
+    "back": "Volver",
+    "close": "Cerrar",
+    "language": "Spanish"
+  },
+  "auth": {
+    "login": "Iniciar sesión",
+    "logout": "Cerrar sesión",
+    "signup": "Registrarse",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "forgotPassword": "¿Olvidó su contraseña?",
+    "createAccount": "Crear cuenta",
+    "alreadyHaveAccount": "¿Ya tiene una cuenta?",
+    "dontHaveAccount": "¿No tiene una cuenta?"
+  },
+  "delivery": {
+    "title": "Gestión de entregas",
+    "newRequest": "Nueva solicitud de entrega",
+    "tracking": "Seguimiento de entrega",
+    "pickupLocation": "Lugar de recogida",
+    "dropoffLocation": "Lugar de entrega",
+    "enterPickupAddress": "Ingrese la dirección de recogida",
+    "enterDropoffAddress": "Ingrese la dirección de entrega",
+    "packagePicture": "Foto del paquete",
+    "uploadPicture": "Subir una foto",
+    "pictureRequirements": "PNG, JPG hasta 5MB",
+    "removePicture": "Eliminar foto",
+    "vehiclePreference": "Tipo de vehículo",
+    "weight": "Peso (kg)",
+    "description": "Descripción",
+    "enterDescription": "Descripción del paquete",
+    "creatingRequest": "Creando solicitud...",
+    "createRequest": "Crear solicitud",
+    "vehicleTypes": {
+      "car": "Coche",
+      "van": "Furgoneta",
+      "truck": "Camión",
+      "motorcycle": "Moto"
+    },
+    "errors": {
+      "fileTooLarge": "El tamaño del archivo debe ser menor a 5MB",
+      "mapUnavailable": "Los servicios de mapas no están disponibles",
+      "invalidAddresses": "Direcciones inválidas"
+    },
+    "status": {
+      "pending": "Pendiente",
+      "inProgress": "En proceso",
+      "completed": "Completada",
+      "cancelled": "Cancelada"
+    }
+  }
+}

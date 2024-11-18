@@ -1,0 +1,62 @@
+{
+  "common": {
+    "appName": "GoPack",
+    "loading": "I ñkii...",
+    "error": "Mahiha",
+    "success": "I nkɔŋ",
+    "save": "Bɔŋɔl",
+    "cancel": "Tíbil",
+    "delete": "Sɔ́hɔ́l",
+    "edit": "Kɔ́lɔl",
+    "create": "Hék",
+    "submit": "Óm",
+    "back": "Búlá",
+    "close": "Kwés",
+    "language": "Hála"
+  },
+  "auth": {
+    "login": "Jɔ́k",
+    "logout": "Pám",
+    "signup": "Tílɛ́ mam",
+    "email": "Émél",
+    "password": "Nsímá",
+    "confirmPassword": "Bɔ́mɔ́l nsímá",
+    "createAccount": "Hék kɔntɛ"
+  },
+  "delivery": {
+    "title": "Nkéé bikɛ́ɛ́",
+    "newRequest": "Hés nkéé",
+    "tracking": "Téb nkéé",
+    "pickupLocation": "Vɔ̀m nkéé",
+    "dropoffLocation": "Vɔ̀m nlóm",
+    "enterPickupAddress": "Tílɛ́ vɔ̀m nkéé",
+    "enterDropoffAddress": "Tílɛ́ vɔ̀m nlóm",
+    "packagePicture": "Fɔ̀tɔ́ bikɛ́ɛ́",
+    "uploadPicture": "Bɔŋɔl fɔ̀tɔ́",
+    "pictureRequirements": "PNG, JPG sí 5MB",
+    "removePicture": "Sɔ́hɔ́l fɔ̀tɔ́",
+    "vehiclePreference": "Mɔ̀t nkéé",
+    "weight": "Mvɛ̀d (kg)",
+    "description": "Nkàn",
+    "enterDescription": "Tílɛ́ nkàn bikɛ́ɛ́",
+    "creatingRequest": "I ñkii hék...",
+    "createRequest": "Hék nkéé",
+    "vehicleTypes": {
+      "car": "Mɔ̀t",
+      "van": "Mɔ̀t nlóm",
+      "truck": "Mɔ̀t nnɛ́n",
+      "motorcycle": "Mɔ̀t mbɔ́g"
+    },
+    "errors": {
+      "fileTooLarge": "Mvɛ̀d fàyl í yà tɔ́ 5MB",
+      "mapUnavailable": "Kálát vɔ̀m kě bé",
+      "invalidAddresses": "Vɔ̀m í sès mvɔ́é"
+    },
+    "status": {
+      "pending": "I ñkii téb",
+      "inProgress": "I ñkii kɛ",
+      "completed": "I mana",
+      "cancelled": "I tíbá"
+    }
+  }
+}

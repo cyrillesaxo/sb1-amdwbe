@@ -1,0 +1,65 @@
+{
+  "common": {
+    "appName": "GoPack",
+    "loading": "Ana lodi...",
+    "error": "Kuskure",
+    "success": "An yi nasara",
+    "save": "Ajiye",
+    "cancel": "Soke",
+    "delete": "Share",
+    "edit": "Gyara",
+    "create": "Ƙirƙiri",
+    "submit": "Aika",
+    "back": "Koma",
+    "close": "Rufe",
+    "language": "Harshe"
+  },
+  "auth": {
+    "login": "Shiga",
+    "logout": "Fita",
+    "signup": "Yi Rijista",
+    "email": "Imel",
+    "password": "Kalmar sirri",
+    "confirmPassword": "Tabbatar da Kalmar sirri",
+    "forgotPassword": "Ka manta kalmar sirri?",
+    "createAccount": "Ƙirƙiri Asusu",
+    "alreadyHaveAccount": "Kana da asusu?",
+    "dontHaveAccount": "Ba ka da asusu?"
+  },
+  "delivery": {
+    "title": "Gudanar da Kai Kaya",
+    "newRequest": "Sabon Buƙatar Kai Kaya",
+    "tracking": "Bi Kai Kaya",
+    "pickupLocation": "Wurin Dauko",
+    "dropoffLocation": "Wurin Kai",
+    "enterPickupAddress": "Shigar da adireshin dauko",
+    "enterDropoffAddress": "Shigar da adireshin kai",
+    "packagePicture": "Hoton Kaya",
+    "uploadPicture": "Ɗora hoto",
+    "pictureRequirements": "PNG, JPG har 5MB",
+    "removePicture": "Cire hoto",
+    "vehiclePreference": "Nau'in Mota",
+    "weight": "Nauyi (kg)",
+    "description": "Bayani",
+    "enterDescription": "Bayani game da kaya",
+    "creatingRequest": "Ana ƙirƙira buƙata...",
+    "createRequest": "Ƙirƙiri Buƙata",
+    "vehicleTypes": {
+      "car": "Mota",
+      "van": "Babur",
+      "truck": "Babbar mota",
+      "motorcycle": "Babur"
+    },
+    "errors": {
+      "fileTooLarge": "Girman fayil ya kamata ya kasance ƙasa da 5MB",
+      "mapUnavailable": "Babu damar samun taswirar wurare",
+      "invalidAddresses": "Adireshin ba daidai ba ne"
+    },
+    "status": {
+      "pending": "Ana jira",
+      "inProgress": "Ana ci gaba",
+      "completed": "An gama",
+      "cancelled": "An soke"
+    }
+  }
+}

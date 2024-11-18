@@ -1,0 +1,965 @@
+{
+  "common": {
+    "appName": "GoPack",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "submit": "Submit",
+    "back": "Back",
+    "close": "Close",
+    "language": "Language",
+    "disconnect": "Disconnect",
+    "learnMore": "Learn More"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "signup": "Sign up",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Re-enter your password",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Enter your full name",
+    "forgotPassword": "Forgot your password?",
+    "createAccount": "Create account",
+    "signupDescription": "Create an account to get started",
+    "alreadyHaveAccount": "Already have an account? Sign in",
+    "dontHaveAccount": "Don't have an account? Sign up",
+    "continueWith": "Or continue with",
+    "privacyNotice": "By continuing, you agree to our Terms and Privacy Policy",
+    "errors": {
+      "passwordMismatch": "Passwords do not match",
+      "requiredFields": "Please fill in all required fields",
+      "socialLoginFailed": "Social login failed"
+    }
+  },
+  "user": {
+    "role": {
+      "title": "Account Type",
+      "sender": "Sender",
+      "bidder": "Delivery Provider"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Fast & Reliable Delivery Service",
+      "subtitle": "From parcels to containers, we deliver it all",
+      "cta": "Send Package Now"
+    },
+    "features": {
+      "realTimeTracking": {
+        "title": "Real-time Tracking",
+        "description": "Track your deliveries in real-time with our advanced GPS system",
+        "tooltip": "Get live updates, estimated arrival times, and instant notifications"
+      },
+      "securePayments": {
+        "title": "Secure Payments",
+        "description": "Multiple secure payment options including mobile money",
+        "tooltip": "End-to-end encrypted transactions with fraud protection"
+      },
+      "verifiedProviders": {
+        "title": "Verified Partners",
+        "description": "All our delivery partners are verified and rated",
+        "tooltip": "Background-checked and trained delivery professionals"
+      }
+    },
+    "trust": {
+      "title": "Trusted by Thousands",
+      "subtitle": "Join our community of satisfied customers who trust us with their deliveries",
+      "stats": {
+        "success": "99.9%",
+        "successLabel": "Delivery Success Rate",
+        "users": "15K+",
+        "usersLabel": "Active Users",
+        "rating": "4.9/5",
+        "ratingLabel": "Customer Rating"
+      }
+    }
+  },
+  "delivery": {
+    "title": "Create Delivery Request",
+    "subtitle": "Fill in the details for your delivery",
+    "locationDetails": "Location Details",
+    "pickupLocation": "Pickup Location",
+    "dropoffLocation": "Dropoff Location",
+    "enterPickupAddress": "Enter pickup address",
+    "enterDropoffAddress": "Enter destination address",
+    "packageDetails": {
+      "title": "Package Details",
+      "weight": "Weight (kg)",
+      "value": "Value ($)",
+      "specialHandling": "Special Handling",
+      "required": "Required",
+      "description": "Description"
+    },
+    "packagePicture": "Package Picture",
+    "uploadPicture": "Upload picture",
+    "pictureRequirements": "PNG, JPG up to 5MB",
+    "removePicture": "Remove picture",
+    "weight": "Weight (kg)",
+    "weightPlaceholder": "Enter package weight",
+    "description": "Description",
+    "descriptionPlaceholder": "Describe your package",
+    "packagePreview": "Package preview",
+    "clickToUpload": "Click to upload",
+    "uploadRequirements": "PNG, JPG up to 5MB",
+    "fileSizeAlert": "File size must be less than 5MB",
+    "scheduleDetails": "Schedule Details",
+    "deliveryDate": "Delivery Date",
+    "deliveryTime": "Delivery Time",
+    "commodityType": "Commodity Type",
+    "totalWeight": "Total Weight (kg)",
+    "dimensions": "Dimensions (cm)",
+    "length": "Length",
+    "width": "Width",
+    "height": "Height",
+    "quantity": "Quantity",
+    "freightDetails": "Freight Details",
+    "containerSize": "Container Size",
+    "selectSize": "Select size",
+    "container20dv": "20' DV (Dry Van)",
+    "container40dv": "40' DV (Dry Van)",
+    "container40hc": "40' HC (High Cube)",
+    "container45hc": "45' HC (High Cube)",
+    "numberOfContainers": "Number of Containers",
+    "weightPerContainer": "Weight per Container (kg)",
+    "types": {
+      "title": "Choose your delivery type",
+      "standard": {
+        "title": "Standard",
+        "description": "Regular delivery service",
+        "time": "24-48 hours",
+        "price": "5,000 FCFA"
+      },
+      "express": {
+        "title": "Express",
+        "description": "Same-day delivery",
+        "time": "2-4 hours",
+        "price": "7,500 FCFA"
+      },
+      "scheduled": {
+        "title": "Scheduled",
+        "description": "Choose your delivery time",
+        "time": "You decide",
+        "price": "From 6,000 FCFA"
+      }
+    },
+    "features": {
+      "realTimeTracking": "Real-time tracking",
+      "insurance": "Insurance up to 100,000 FCFA",
+      "multipleVehicles": "Multiple vehicle options",
+      "priorityHandling": "Priority handling",
+      "dedicatedDriver": "Dedicated driver",
+      "liveSupport": "Live chat support",
+      "flexibleScheduling": "Flexible scheduling",
+      "allPackageTypes": "All package types",
+      "containerShipping": "Container shipping"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Choose from our wide range of delivery options",
+    "transportation": {
+      "title": "Transportation Services",
+      "hourly": {
+        "name": "Hourly",
+        "description": "Book by the hour"
+      },
+      "reserve": {
+        "name": "Reserve",
+        "description": "Schedule a future ride"
+      },
+      "group": {
+        "name": "Group Ride",
+        "description": "Travel together"
+      }
+    },
+    "delivery": {
+      "title": "Delivery Services",
+      "food": {
+        "name": "Food",
+        "description": "Restaurant delivery"
+      },
+      "grocery": {
+        "name": "Grocery",
+        "description": "Grocery delivery"
+      },
+      "alcohol": {
+        "name": "Alcohol",
+        "description": "Alcohol delivery"
+      },
+      "convenience": {
+        "name": "Convenience",
+        "description": "Convenience items"
+      },
+      "health": {
+        "name": "Health",
+        "description": "Pharmacy & health"
+      },
+      "personalCare": {
+        "name": "Personal Care",
+        "description": "Personal care items"
+      },
+      "baby": {
+        "name": "Baby",
+        "description": "Baby supplies"
+      },
+      "gourmet": {
+        "name": "Gourmet",
+        "description": "Specialty foods"
+      },
+      "petSupplies": {
+        "name": "Pet Supplies",
+        "description": "Pet food & supplies"
+      },
+      "flowers": {
+        "name": "Flowers",
+        "description": "Flower delivery"
+      },
+      "retail": {
+        "name": "Retail",
+        "description": "Shop retail stores"
+      },
+      "electronics": {
+        "name": "Electronics",
+        "description": "Electronics & gadgets"
+      }
+    },
+    "additional": {
+      "title": "Additional Services",
+      "package": {
+        "name": "Package",
+        "description": "Send packages"
+      },
+      "storePickup": {
+        "name": "Store Pickup",
+        "description": "Pickup from any store"
+      }
+    }
+  },
+  "account": {
+    "profile": {
+      "verified": "Verified",
+      "goldMember": "Gold Member"
+    },
+    "stats": {
+      "deliveries": "Deliveries",
+      "points": "Points",
+      "totalSpent": "Total Spent"
+    },
+    "menu": {
+      "help": {
+        "title": "Help",
+        "subtitle": "24/7 Support Available"
+      },
+      "payment": {
+        "title": "Payment",
+        "subtitle": "3 payment methods"
+      },
+      "activity": {
+        "title": "Activity",
+        "subtitle": "15 recent deliveries"
+      },
+      "premium": {
+        "title": "GoPack Premium",
+        "subtitle": "Try free for 4 weeks"
+      },
+      "safety": {
+        "title": "Safety checkup",
+        "subtitle": "Learn ways to make deliveries safer"
+      },
+      "privacy": {
+        "title": "Privacy checkup",
+        "subtitle": "Take an interactive tour of your privacy settings"
+      },
+      "referral": {
+        "title": "Invite friends to GoPack",
+        "subtitle": "You will get 50% off 2 deliveries"
+      }
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "activity": "Activity",
+    "account": "Account",
+    "document": "Document Upload",
+    "quote": "Quote",
+    "customs": "Customs Information",
+    "carrier": "Carrier Locations",
+    "business": "Business",
+    "eco": "Eco",
+    "marketplace": "Marketplace"
+  },
+  "activity": {
+    "activeDelivery": {
+      "title": "Active Delivery",
+      "estimatedDelivery": "Estimated Delivery",
+      "delayed": "Delayed",
+      "trackDelivery": "Track Delivery"
+    },
+    "status": {
+      "scheduled": "SCHEDULED",
+      "pickedUp": "PICKED UP",
+      "delivered": "DELIVERED",
+      "pending": "Pending"
+    },
+    "delayNotice": "This shipment is arriving later than originally expected.",
+    "quickActions": {
+      "documentUpload": "Document Upload",
+      "quote": "Quote",
+      "customsInfo": "Customs Information",
+      "carrierLocations": "Carrier Locations"
+    },
+    "shipmentDetails": {
+      "shipper": "SHIPPER",
+      "consignee": "CONSIGNEE",
+      "hours": "09:00 - 17:00",
+      "phone": "Phone"
+    }
+  },
+  "help": {
+    "title": "Help & Support",
+    "topics": {
+      "liveChat": {
+        "title": "Live Chat",
+        "description": "Chat with our support team",
+        "status": "Available"
+      },
+      "phone": {
+        "title": "Phone Support",
+        "description": "+237 699 123 456",
+        "status": "24/7"
+      },
+      "email": {
+        "title": "Email Support",
+        "description": "support@gopack.com",
+        "status": "< 24h"
+      },
+      "faqs": {
+        "title": "FAQs",
+        "description": "Find quick answers",
+        "badge": "Popular"
+      },
+      "helpCenter": {
+        "title": "Help Center",
+        "description": "Detailed guides and tutorials"
+      }
+    },
+    "emergency": {
+      "title": "Emergency Support",
+      "description": "For urgent issues requiring immediate assistance",
+      "button": "Contact Emergency Support"
+    }
+  },
+
+
+
+
+
+  "common": {
+    "appName": "GoPack",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "submit": "Submit",
+    "back": "Back",
+    "close": "Close",
+    "language": "Language",
+    "disconnect": "Disconnect",
+    "learnMore": "Learn More"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "signup": "Sign up",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Re-enter your password",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Enter your full name",
+    "forgotPassword": "Forgot your password?",
+    "createAccount": "Create account",
+    "signupDescription": "Create an account to get started",
+    "alreadyHaveAccount": "Already have an account? Sign in",
+    "dontHaveAccount": "Don't have an account? Sign up",
+    "continueWith": "Or continue with",
+    "privacyNotice": "By continuing, you agree to our Terms and Privacy Policy",
+    "errors": {
+      "passwordMismatch": "Passwords do not match",
+      "requiredFields": "Please fill in all required fields",
+      "socialLoginFailed": "Social login failed"
+    }
+  },
+  "user": {
+    "role": {
+      "title": "Account Type",
+      "sender": "Sender",
+      "bidder": "Delivery Provider"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Fast & Reliable Delivery Service",
+      "subtitle": "From parcels to containers, we deliver it all",
+      "cta": "Send Package Now"
+    },
+    "features": {
+      "realTimeTracking": {
+        "title": "Real-time Tracking",
+        "description": "Track your deliveries in real-time with our advanced GPS system",
+        "tooltip": "Get live updates, estimated arrival times, and instant notifications"
+      },
+      "securePayments": {
+        "title": "Secure Payments",
+        "description": "Multiple secure payment options including mobile money",
+        "tooltip": "End-to-end encrypted transactions with fraud protection"
+      },
+      "verifiedProviders": {
+        "title": "Verified Partners",
+        "description": "All our delivery partners are verified and rated",
+        "tooltip": "Background-checked and trained delivery professionals"
+      }
+    },
+    "trust": {
+      "title": "Trusted by Thousands",
+      "subtitle": "Join our community of satisfied customers who trust us with their deliveries",
+      "stats": {
+        "success": "99.9%",
+        "successLabel": "Delivery Success Rate",
+        "users": "15K+",
+        "usersLabel": "Active Users",
+        "rating": "4.9/5",
+        "ratingLabel": "Customer Rating"
+      }
+    }
+  },
+  "delivery": {
+    "title": "Create Delivery Request",
+    "subtitle": "Fill in the details for your delivery",
+    "locationDetails": "Location Details",
+    "pickupLocation": "Pickup Location",
+    "dropoffLocation": "Dropoff Location",
+    "enterPickupAddress": "Enter pickup address",
+    "enterDropoffAddress": "Enter destination address",
+    "customs": {
+      "type": "Customs Declaration Type",
+      "commercial": "Commercial Goods",
+      "value": "Declared Value",
+      "valuePlaceholder": "Enter value in FCFA",
+      "description": "Goods Description"
+    },
+    "document": {
+      "upload": "Upload Documents",
+      "allowedTypes": "Supported formats: PDF, DOC, DOCX (max 10MB)"
+    },
+    "quote": {
+      "service": "Service Type",
+      "standard": "Standard Delivery",
+      "weight": "Package Weight",
+      "distance": "Delivery Distance"
+    },
+    "carrier": {
+      "title": "Available Carriers",
+      "nearbyLocations": "These carriers are currently available in your area"
+    },    
+    "packageDetails": {
+      "title": "Package Details",
+      "weight": "Weight (kg)",
+      "value": "Value ($)",
+      "specialHandling": "Special Handling",
+      "required": "Required",
+      "description": "Description"
+    },
+    "packagePicture": "Package Picture",
+    "uploadPicture": "Upload picture",
+    "pictureRequirements": "PNG, JPG up to 5MB",
+    "removePicture": "Remove picture",
+    "weight": "Weight (kg)",
+    "weightPlaceholder": "Enter package weight",
+    "description": "Description",
+    "descriptionPlaceholder": "Describe your package",
+    "packagePreview": "Package preview",
+    "clickToUpload": "Click to upload",
+    "uploadRequirements": "PNG, JPG up to 5MB",
+    "fileSizeAlert": "File size must be less than 5MB",
+    "scheduleDetails": "Schedule Details",
+    "deliveryDate": "Delivery Date",
+    "deliveryTime": "Delivery Time",
+    "commodityType": "Commodity Type",
+    "totalWeight": "Total Weight (kg)",
+    "dimensions": "Dimensions (cm)",
+    "length": "Length",
+    "width": "Width",
+    "height": "Height",
+    "quantity": "Quantity",
+    "freightDetails": "Freight Details",
+    "containerSize": "Container Size",
+    "selectSize": "Select size",
+    "container20dv": "20' DV (Dry Van)",
+    "container40dv": "40' DV (Dry Van)",
+    "container40hc": "40' HC (High Cube)",
+    "container45hc": "45' HC (High Cube)",
+    "numberOfContainers": "Number of Containers",
+    "weightPerContainer": "Weight per Container (kg)",
+    "types": {
+      "title": "Choose your delivery type",
+      "standard": {
+        "title": "Standard",
+        "description": "Regular delivery service",
+        "time": "24-48 hours",
+        "price": "5,000 FCFA"
+      },
+      "express": {
+        "title": "Express",
+        "description": "Same-day delivery",
+        "time": "2-4 hours",
+        "price": "7,500 FCFA"
+      },
+      "scheduled": {
+        "title": "Scheduled",
+        "description": "Choose your delivery time",
+        "time": "You decide",
+        "price": "From 6,000 FCFA"
+      }
+    },
+    "features": {
+      "realTimeTracking": "Real-time tracking",
+      "insurance": "Insurance up to 100,000 FCFA",
+      "multipleVehicles": "Multiple vehicle options",
+      "priorityHandling": "Priority handling",
+      "dedicatedDriver": "Dedicated driver",
+      "liveSupport": "Live chat support",
+      "flexibleScheduling": "Flexible scheduling",
+      "allPackageTypes": "All package types",
+      "containerShipping": "Container shipping"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Choose from our wide range of delivery options",
+    "transportation": {
+      "title": "Transportation Services",
+      "hourly": {
+        "name": "Hourly",
+        "description": "Book by the hour"
+      },
+      "reserve": {
+        "name": "Reserve",
+        "description": "Schedule a future ride"
+      },
+      "group": {
+        "name": "Group Ride",
+        "description": "Travel together"
+      }
+    },
+    "delivery": {
+      "title": "Delivery Services",
+      "food": {
+        "name": "Food",
+        "description": "Restaurant delivery"
+      },
+      "grocery": {
+        "name": "Grocery",
+        "description": "Grocery delivery"
+      },
+      "alcohol": {
+        "name": "Alcohol",
+        "description": "Alcohol delivery"
+      },
+      "convenience": {
+        "name": "Convenience",
+        "description": "Convenience items"
+      },
+      "health": {
+        "name": "Health",
+        "description": "Pharmacy & health"
+      },
+      "personalCare": {
+        "name": "Personal Care",
+        "description": "Personal care items"
+      },
+      "baby": {
+        "name": "Baby",
+        "description": "Baby supplies"
+      },
+      "gourmet": {
+        "name": "Gourmet",
+        "description": "Specialty foods"
+      },
+      "petSupplies": {
+        "name": "Pet Supplies",
+        "description": "Pet food & supplies"
+      },
+      "flowers": {
+        "name": "Flowers",
+        "description": "Flower delivery"
+      },
+      "retail": {
+        "name": "Retail",
+        "description": "Shop retail stores"
+      },
+      "electronics": {
+        "name": "Electronics",
+        "description": "Electronics & gadgets"
+      }
+    },
+    "additional": {
+      "title": "Additional Services",
+      "package": {
+        "name": "Package",
+        "description": "Send packages"
+      },
+      "storePickup": {
+        "name": "Store Pickup",
+        "description": "Pickup from any store"
+      }
+    }
+  },
+  "account": {
+    "profile": {
+      "verified": "Verified",
+      "goldMember": "Gold Member"
+    },
+    "stats": {
+      "deliveries": "Deliveries",
+      "points": "Points",
+      "totalSpent": "Total Spent"
+    },
+    "menu": {
+      "help": {
+        "title": "Help",
+        "subtitle": "24/7 Support Available"
+      },
+      "payment": {
+        "title": "Payment",
+        "subtitle": "3 payment methods"
+      },
+      "activity": {
+        "title": "Activity",
+        "subtitle": "15 recent deliveries"
+      },
+      "premium": {
+        "title": "GoPack Premium",
+        "subtitle": "Try free for 4 weeks"
+      },
+      "safety": {
+        "title": "Safety checkup",
+        "subtitle": "Learn ways to make deliveries safer"
+      },
+      "privacy": {
+        "title": "Privacy checkup",
+        "subtitle": "Take an interactive tour of your privacy settings"
+      },
+      "referral": {
+        "title": "Invite friends to GoPack",
+        "subtitle": "You will get 50% off 2 deliveries"
+      }
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "activity": "Activity",
+    "account": "Account",
+    "document": "Document Upload",
+    "quote": "Quote",
+    "customs": "Customs Information",
+    "carrier": "Carrier Locations",
+    "business": "Business",
+    "eco": "Eco",
+    "marketplace": "Marketplace"
+  },
+  "activity": {
+    "activeDelivery": {
+      "title": "Active Delivery",
+      "estimatedDelivery": "Estimated Delivery",
+      "delayed": "Delayed",
+      "trackDelivery": "Track Delivery"
+    },
+    "status": {
+      "scheduled": "SCHEDULED",
+      "pickedUp": "PICKED UP",
+      "delivered": "DELIVERED",
+      "pending": "Pending"
+    },
+    "delayNotice": "This shipment is arriving later than originally expected.",
+    "quickActions": {
+      "documentUpload": "Document Upload",
+      "quote": "Quote",
+      "customsInfo": "Customs Information",
+      "carrierLocations": "Carrier Locations"
+    },
+    "shipmentDetails": {
+      "shipper": "SHIPPER",
+      "consignee": "CONSIGNEE",
+      "hours": "09:00 - 17:00",
+      "phone": "Phone"
+    }
+  },
+  "help": {
+    "title": "Help & Support",
+    "topics": {
+      "liveChat": {
+        "title": "Live Chat",
+        "description": "Chat with our support team",
+        "status": "Available"
+      },
+      "phone": {
+        "title": "Phone Support",
+        "description": "+237 699 123 456",
+        "status": "24/7"
+      },
+      "email": {
+        "title": "Email Support",
+        "description": "support@gopack.com",
+        "status": "< 24h"
+      },
+      "faqs": {
+        "title": "FAQs",
+        "description": "Find quick answers",
+        "badge": "Popular"
+      },
+      "helpCenter": {
+        "title": "Help Center",
+        "description": "Detailed guides and tutorials"
+      }
+    },
+    "emergency": {
+      "title": "Emergency Support",
+      "description": "For urgent issues requiring immediate assistance",
+      "button": "Contact Emergency Support"
+    }
+  },
+  "payment": {
+    "title": "Payment Methods",
+    "subtitle": "Manage your payment options",
+    "addNew": "Add New",
+    "methods": {
+      "title": "Your Payment Methods",
+      "primary": "Primary",
+      "balance": "Balance"
+    },
+    "transactions": {
+      "title": "Recent Transactions",
+      "date": "Date",
+      "amount": "Amount",
+      "status": "Status",
+      "type": {
+        "payment": "Payment",
+        "refund": "Refund"
+      }
+    },
+    "addPayment": {
+      "title": "Add Payment Method",
+      "cancel": "Cancel",
+      "add": "Add Method"
+    }
+  },
+  "privacy": {
+    "title": "Privacy Settings",
+    "subtitle": "Control your privacy and security preferences",
+    "sections": {
+      "accountPrivacy": {
+        "title": "Account Privacy",
+        "description": "Control who can see your profile and activity",
+        "options": {
+          "profileVisibility": "Profile visibility",
+          "activityStatus": "Activity status"
+        }
+      },
+      "dataVisibility": {
+        "title": "Data Visibility",
+        "description": "Manage what information is visible to others",
+        "options": {
+          "phoneNumber": "Phone number",
+          "emailAddress": "Email address"
+        }
+      },
+      "communication": {
+        "title": "Communication",
+        "description": "Control how we communicate with you",
+        "options": {
+          "marketingEmails": "Marketing emails",
+          "pushNotifications": "Push notifications"
+        }
+      },
+      "dataSharing": {
+        "title": "Data Sharing",
+        "description": "Manage how your data is shared",
+        "options": {
+          "locationSharing": "Location sharing",
+          "usageStats": "Usage statistics"
+        }
+      }
+    },
+    "dataExport": {
+      "title": "Download Your Data",
+      "description": "Get a copy of your personal data in a machine-readable format",
+      "button": "Request Data Export"
+    }
+  },
+  "premium": {
+    "title": "GoPack Premium",
+    "tryFree": {
+      "title": "Try Premium Free",
+      "subtitle": "Get 4 weeks of Premium benefits at no cost",
+      "cta": "Start Free Trial"
+    },
+    "features": {
+      "prioritySupport": {
+        "title": "Priority Support",
+        "description": "24/7 dedicated customer service"
+      },
+      "flexibleScheduling": {
+        "title": "Flexible Scheduling",
+        "description": "Schedule deliveries up to 30 days in advance"
+      },
+      "premiumBenefits": {
+        "title": "Premium Benefits",
+        "description": "Exclusive discounts and rewards"
+      },
+      "expressDelivery": {
+        "title": "Express Delivery",
+        "description": "Priority matching with nearby drivers"
+      }
+    },
+    "plans": {
+      "title": "Premium Plans",
+      "monthly": {
+        "name": "Monthly",
+        "billing": "Billed monthly",
+        "price": "4,999 FCFA",
+        "period": "/month"
+      },
+      "annual": {
+        "name": "Annual",
+        "billing": "Billed annually",
+        "price": "47,999 FCFA",
+        "period": "/year",
+        "savings": "Save 20%"
+      }
+    }
+  },
+  "referral": {
+    "title": "Invite Friends",
+    "shareTitle": "Share the love",
+    "shareSubtitle": "Invite friends to GoPack and you both get rewards",
+    "rewards": {
+      "youGet": {
+        "title": "You Get",
+        "description": "50% off your next 2 deliveries"
+      },
+      "theyGet": {
+        "title": "They Get",
+        "description": "50% off their first delivery"
+      }
+    },
+    "code": {
+      "title": "Your Referral Code",
+      "shareVia": "Share via"
+    }
+  },
+  "safety": {
+    "title": "Safety Checkup",
+    "subtitle": "Complete safety tasks to protect your account",
+    "score": {
+      "title": "Safety Score",
+      "progress": "2/6 Complete"
+    },
+    "checks": [
+      {
+        "title": "Verify your identity",
+        "description": "Add a government-issued ID to verify your account",
+        "status": "completed"
+      },
+      {
+        "title": "Enable two-factor authentication",
+        "description": "Add an extra layer of security to your account",
+        "status": "pending"
+      },
+      {
+        "title": "Set up emergency contacts",
+        "description": "Add trusted contacts for emergencies",
+        "status": "completed"
+      },
+      {
+        "title": "Review safety guidelines",
+        "description": "Learn about our safety policies and guidelines",
+        "status": "pending"
+      },
+      {
+        "title": "Complete safety quiz",
+        "description": "Test your knowledge of safety procedures",
+        "status": "pending"
+      },
+      {
+        "title": "Set up trusted locations",
+        "description": "Add your frequently visited locations",
+        "status": "pending"
+      }
+    ],
+    "status": {
+      "completed": "Completed",
+      "pending": "Complete Now"
+    }
+  },
+  "serviceDetails": {
+    "search": {
+      "placeholder": "Search stores",
+      "filters": "Filters",
+      "deliveryTime": "Delivery Time",
+      "rating": "Rating"
+    },
+    "store": {
+      "deliveryFee": "delivery",
+      "offers": {
+        "firstOrder": "10% off first order"
+      },
+      "tags": {
+        "organic": "Organic",
+        "fresh": "Fresh",
+        "specialty": "Specialty"
+      }
+    },
+    "noResults": {
+      "title": "No stores found",
+      "message": "No stores found matching your search."
+    }
+  },
+    "notifications": {
+    "title": "Notifications",
+    "empty": "No notifications yet",
+    "markAllRead": "Mark all as read",
+    "clearAll": "Clear all",
+    "markAsRead": "Mark as read",
+    "delete": "Delete",
+    "viewDetails": "View details",
+    "selectAll": "Select all",
+    "unselectAll": "Unselect all",
+    "total": "notifications",
+    "new": "New",
+    "types": {
+      "delivery": "Delivery Update",
+      "payment": "Payment Update",
+      "system": "System Update",
+      "emergency": "Emergency Alert"
+    }
+  }
+}

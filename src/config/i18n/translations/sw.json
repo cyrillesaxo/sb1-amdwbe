@@ -1,0 +1,65 @@
+{
+  "common": {
+    "appName": "GoPack",
+    "loading": "Inapakia...",
+    "error": "Hitilafu",
+    "success": "Imefanikiwa",
+    "save": "Hifadhi",
+    "cancel": "Ghairi",
+    "delete": "Futa",
+    "edit": "Hariri",
+    "create": "Unda",
+    "submit": "Wasilisha",
+    "back": "Rudi",
+    "close": "Funga",
+    "language": "Lugha"
+  },
+  "auth": {
+    "login": "Ingia",
+    "logout": "Toka",
+    "signup": "Jisajili",
+    "email": "Barua pepe",
+    "password": "Nywila",
+    "confirmPassword": "Thibitisha Nywila",
+    "forgotPassword": "Umesahau Nywila?",
+    "createAccount": "Fungua Akaunti",
+    "alreadyHaveAccount": "Una akaunti tayari?",
+    "dontHaveAccount": "Huna akaunti?"
+  },
+  "delivery": {
+    "title": "Usimamizi wa Usafirishaji",
+    "newRequest": "Ombi Jipya la Usafirishaji",
+    "tracking": "Fuatilia Usafirishaji",
+    "pickupLocation": "Mahali pa Kuchukua",
+    "dropoffLocation": "Mahali pa Kupeleka",
+    "enterPickupAddress": "Ingiza anwani ya kuchukua",
+    "enterDropoffAddress": "Ingiza anwani ya kupeleka",
+    "packagePicture": "Picha ya Mzigo",
+    "uploadPicture": "Pakia picha",
+    "pictureRequirements": "PNG, JPG hadi 5MB",
+    "removePicture": "Ondoa picha",
+    "vehiclePreference": "Aina ya Gari",
+    "weight": "Uzito (kg)",
+    "description": "Maelezo",
+    "enterDescription": "Maelezo ya mzigo",
+    "creatingRequest": "Inaunda ombi...",
+    "createRequest": "Unda Ombi",
+    "vehicleTypes": {
+      "car": "Gari",
+      "van": "Van",
+      "truck": "Lori",
+      "motorcycle": "Pikipiki"
+    },
+    "errors": {
+      "fileTooLarge": "Ukubwa wa faili lazima uwe chini ya 5MB",
+      "mapUnavailable": "Huduma za ramani hazipatikani",
+      "invalidAddresses": "Anwani si sahihi"
+    },
+    "status": {
+      "pending": "Inasubiri",
+      "inProgress": "Inaendelea",
+      "completed": "Imekamilika",
+      "cancelled": "Imeghairiwa"
+    }
+  }
+}

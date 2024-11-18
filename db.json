@@ -1,0 +1,265 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "role": "sender",
+      "profileImage": "https://source.unsplash.com/random/200x200?face",
+      "address": {
+        "street": "123 Main Street",
+        "city": "Douala",
+        "state": "Littoral",
+        "country": "Cameroon",
+        "zip": "12345"
+      },
+      "contact": {
+        "phone": "+237 699 123 456",
+        "alternateEmail": "john.business@example.com"
+      },
+      "company": {
+        "name": "John's Electronics",
+        "taxId": "CAM123456789",
+        "type": "Retail",
+        "address": "456 Commerce Street, Douala"
+      },
+      "paymentMethods": [
+        {
+          "id": "pm1",
+          "type": "mobile_money",
+          "provider": "Orange Money",
+          "number": "+237 699 123 456",
+          "primary": true,
+          "balance": "150,000 FCFA"
+        },
+        {
+          "id": "pm2",
+          "type": "mobile_money",
+          "provider": "MTN Mobile Money",
+          "number": "+237 677 987 654",
+          "primary": false,
+          "balance": "85,000 FCFA"
+        },
+        {
+          "id": "pm3",
+          "type": "credit_card",
+          "provider": "Visa",
+          "number": "**** **** **** 4242",
+          "expiry": "12/25",
+          "primary": false
+        }
+      ],
+      "deliveryHistory": [
+        {
+          "id": "d1",
+          "date": "2024-03-15",
+          "type": "express",
+          "status": "completed",
+          "from": "Douala Central Market",
+          "to": "Bonapriso Mall",
+          "amount": "7,500 FCFA",
+          "rating": 5,
+          "items": [
+            {
+              "name": "Electronics",
+              "weight": "2.5kg",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "id": "d2",
+          "date": "2024-03-10",
+          "type": "standard",
+          "status": "completed",
+          "from": "Akwa Shopping Center",
+          "to": "Bonanjo Business District",
+          "amount": "5,000 FCFA",
+          "rating": 4,
+          "items": [
+            {
+              "name": "Documents",
+              "weight": "0.5kg",
+              "quantity": 1
+            }
+          ]
+        }
+      ],
+      "preferences": {
+        "language": "fr",
+        "currency": "XAF",
+        "theme": "light",
+        "notifications": {
+          "email": true,
+          "sms": true,
+          "push": false
+        }
+      },
+      "stats": {
+        "totalDeliveries": 15,
+        "totalSpent": "245,000 FCFA",
+        "averageRating": 4.8,
+        "memberSince": "2023-09-15",
+        "loyaltyPoints": 1250,
+        "loyaltyTier": "gold"
+      },
+      "savedLocations": [
+        {
+          "id": "loc1",
+          "name": "Home",
+          "address": "123 Main Street, Bonapriso",
+          "lat": 4.0511,
+          "lng": 9.7679
+        },
+        {
+          "id": "loc2",
+          "name": "Office",
+          "address": "456 Commerce Street, Bonanjo",
+          "lat": 4.0531,
+          "lng": 9.7699
+        },
+        {
+          "id": "loc3",
+          "name": "Shop",
+          "address": "789 Market Road, Akwa",
+          "lat": 4.0521,
+          "lng": 9.7689
+        }
+      ],
+      "integrations": {
+        "ecommerce": [
+          {
+            "platform": "Shopify",
+            "storeName": "John's Electronics",
+            "connected": true,
+            "lastSync": "2024-03-15T10:30:00Z"
+          },
+          {
+            "platform": "WooCommerce",
+            "storeName": "JD Fashion Store",
+            "connected": true,
+            "lastSync": "2024-03-14T15:45:00Z"
+          }
+        ],
+        "postal": [
+          {
+            "service": "Campost",
+            "accountId": "CP123456",
+            "connected": true,
+            "lastSync": "2024-03-15T08:00:00Z"
+          }
+        ]
+      }
+    }
+  ],
+  "deliveries": [
+    {
+      "id": "d1",
+      "userId": "1",
+      "type": "express",
+      "status": "in_progress",
+      "pickup": {
+        "address": "Douala Central Market",
+        "lat": 4.0511,
+        "lng": 9.7679
+      },
+      "dropoff": {
+        "address": "Bonapriso Mall",
+        "lat": 4.0611,
+        "lng": 9.7779
+      },
+      "package": {
+        "description": "Electronics",
+        "weight": 2.5,
+        "value": 150000,
+        "requiresSpecialHandling": true
+      },
+      "amount": "7,500 FCFA",
+      "date": "2024-03-15T10:30:00Z",
+      "driver": {
+        "name": "Jean Paul",
+        "rating": 4.8,
+        "vehicle": "Toyota Hilux",
+        "eta": "15 min"
+      }
+    },
+    {
+      "id": "d2",
+      "userId": "1",
+      "type": "standard",
+      "status": "completed",
+      "pickup": {
+        "address": "Akwa Shopping Center",
+        "lat": 4.0531,
+        "lng": 9.7699
+      },
+      "dropoff": {
+        "address": "Bonanjo Business District",
+        "lat": 4.0631,
+        "lng": 9.7799
+      },
+      "package": {
+        "description": "Documents",
+        "weight": 0.5,
+        "value": 25000,
+        "requiresSpecialHandling": false
+      },
+      "amount": "5,000 FCFA",
+      "date": "2024-03-10T14:45:00Z",
+      "rating": 4,
+      "driver": {
+        "name": "Marie Claire",
+        "rating": 4.9,
+        "vehicle": "Honda Motorcycle"
+      }
+    }
+  ],
+  "settings": {
+    "themes": [
+      {
+        "id": "light",
+        "name": "Light",
+        "colors": {
+          "primary": "#3B82F6",
+          "secondary": "#6366F1",
+          "accent": "#8B5CF6",
+          "background": "#FFFFFF",
+          "text": "#1F2937"
+        }
+      },
+      {
+        "id": "dark",
+        "name": "Dark",
+        "colors": {
+          "primary": "#60A5FA",
+          "secondary": "#818CF8",
+          "accent": "#A78BFA",
+          "background": "#111827",
+          "text": "#F9FAFB"
+        }
+      }
+    ],
+    "languages": [
+      { "code": "en", "name": "English" },
+      { "code": "fr", "name": "Français" },
+      { "code": "es", "name": "Español" }
+    ],
+    "currencies": [
+      {
+        "code": "XAF",
+        "name": "Central African CFA franc",
+        "symbol": "FCFA"
+      },
+      {
+        "code": "USD",
+        "name": "US Dollar",
+        "symbol": "$"
+      },
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  }
+}

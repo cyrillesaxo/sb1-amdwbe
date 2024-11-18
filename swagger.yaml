@@ -1,0 +1,891 @@
+openapi: 3.0.3
+info:
+  title: GoPack Delivery API
+  description: API specification for the GoPack delivery platform optimized for African markets
+  version: 1.0.0
+  contact:
+    name: GoPack Support
+    email: support@gopack.com
+    url: https://gopack.com/support
+
+servers:
+  - url: https://api.gopack.com/v1
+    description: Production server
+  - url: https://staging-api.gopack.com/v1
+    description: Staging server
+
+tags:
+  - name: Authentication
+    description: User authentication and authorization endpoints
+  - name: Users
+    description: User management endpoints
+  - name: Deliveries
+    description: Delivery management endpoints
+  - name: Payments
+    description: Payment processing endpoints
+  - name: Tracking
+    description: Delivery tracking endpoints
+  - name: Community
+    description: Community and social features
+  - name: Infrastructure
+    description: Infrastructure and logistics endpoints
+  - name: Integration
+    description: Third-party integration endpoints
+  - name: Analytics
+    description: Analytics and reporting endpoints
+  - name: Emergency
+    description: Emergency and safety endpoints
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+        email:
+          type: string
+          format: email
+        phone:
+          type: string
+        role:
+          type: string
+          enum: [sender, driver, agent, admin]
+        status:
+          type: string
+          enum: [active, inactive, suspended]
+        verificationStatus:
+          type: string
+          enum: [unverified, pending, verified]
+        language:
+          type: string
+        profileImage:
+          type: string
+          format: uri
+        address:
+          $ref: '#/components/schemas/Address'
+        preferences:
+          $ref: '#/components/schemas/UserPreferences'
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+
+    Address:
+      type: object
+      properties:
+        street:
+          type: string
+        city:
+          type: string
+        state:
+          type: string
+        country:
+          type: string
+        postalCode:
+          type: string
+        coordinates:
+          $ref: '#/components/schemas/Coordinates'
+        what3words:
+          type: string
+        landmarks:
+          type: array
+          items:
+            type: string
+
+    Coordinates:
+      type: object
+      properties:
+        latitude:
+          type: number
+          format: double
+        longitude:
+          type: number
+          format: double
+
+    UserPreferences:
+      type: object
+      properties:
+        language:
+          type: string
+        currency:
+          type: string
+        notifications:
+          type: object
+          properties:
+            email:
+              type: boolean
+            sms:
+              type: boolean
+            push:
+              type: boolean
+            ussd:
+              type: boolean
+        theme:
+          type: string
+          enum: [light, dark, system]
+
+    DeliveryRequest:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        userId:
+          type: string
+          format: uuid
+        type:
+          type: string
+          enum: [standard, express, scheduled]
+        status:
+          type: string
+          enum: [pending, accepted, picked_up, in_transit, delivered, cancelled]
+        pickup:
+          $ref: '#/components/schemas/Location'
+        dropoff:
+          $ref: '#/components/schemas/Location'
+        package:
+          $ref: '#/components/schemas/Package'
+        schedule:
+          $ref: '#/components/schemas/Schedule'
+        pricing:
+          $ref: '#/components/schemas/Pricing'
+        driver:
+          $ref: '#/components/schemas/Driver'
+        tracking:
+          $ref: '#/components/schemas/Tracking'
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+
+    Location:
+      type: object
+      properties:
+        address:
+          type: string
+        coordinates:
+          $ref: '#/components/schemas/Coordinates'
+        what3words:
+          type: string
+        landmarks:
+          type: array
+          items:
+            type: string
+        contactName:
+          type: string
+        contactPhone:
+          type: string
+        instructions:
+          type: string
+        type:
+          type: string
+          enum: [residential, business, pickup_point]
+
+    Package:
+      type: object
+      properties:
+        type:
+          type: string
+          enum: [parcel, document, container, bulk]
+        weight:
+          type: number
+        dimensions:
+          type: object
+          properties:
+            length:
+              type: number
+            width:
+              type: number
+            height:
+              type: number
+            unit:
+              type: string
+              enum: [cm, inch]
+        quantity:
+          type: integer
+        description:
+          type: string
+        category:
+          type: string
+        value:
+          type: number
+        currency:
+          type: string
+        requiresRefrigeration:
+          type: boolean
+        isFragile:
+          type: boolean
+        isHazardous:
+          type: boolean
+        images:
+          type: array
+          items:
+            type: string
+            format: uri
+
+    Schedule:
+      type: object
+      properties:
+        pickupDate:
+          type: string
+          format: date
+        pickupTimeWindow:
+          type: object
+          properties:
+            start:
+              type: string
+              format: time
+            end:
+              type: string
+              format: time
+        deliveryDate:
+          type: string
+          format: date
+        deliveryTimeWindow:
+          type: object
+          properties:
+            start:
+              type: string
+              format: time
+            end:
+              type: string
+              format: time
+        isFlexible:
+          type: boolean
+        specialInstructions:
+          type: string
+
+    Pricing:
+      type: object
+      properties:
+        basePrice:
+          type: number
+        distance:
+          type: number
+        duration:
+          type: number
+        surcharges:
+          type: array
+          items:
+            type: object
+            properties:
+              type:
+                type: string
+              amount:
+                type: number
+              description:
+                type: string
+        discount:
+          type: object
+          properties:
+            type:
+              type: string
+            amount:
+              type: number
+            code:
+              type: string
+        currency:
+          type: string
+        total:
+          type: number
+
+    Driver:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+        phone:
+          type: string
+        vehicleType:
+          type: string
+        vehicleNumber:
+          type: string
+        rating:
+          type: number
+        currentLocation:
+          $ref: '#/components/schemas/Coordinates'
+        status:
+          type: string
+          enum: [available, busy, offline]
+
+    Tracking:
+      type: object
+      properties:
+        trackingNumber:
+          type: string
+        status:
+          type: string
+        currentLocation:
+          $ref: '#/components/schemas/Coordinates'
+        estimatedDeliveryTime:
+          type: string
+          format: date-time
+        history:
+          type: array
+          items:
+            type: object
+            properties:
+              status:
+                type: string
+              location:
+                $ref: '#/components/schemas/Coordinates'
+              timestamp:
+                type: string
+                format: date-time
+              description:
+                type: string
+
+    Payment:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        deliveryId:
+          type: string
+          format: uuid
+        amount:
+          type: number
+        currency:
+          type: string
+        method:
+          type: string
+          enum: [mobile_money, card, bank_transfer, cash]
+        status:
+          type: string
+          enum: [pending, completed, failed, refunded]
+        provider:
+          type: string
+        transactionId:
+          type: string
+        timestamp:
+          type: string
+          format: date-time
+
+    Emergency:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        userId:
+          type: string
+          format: uuid
+        deliveryId:
+          type: string
+          format: uuid
+        type:
+          type: string
+          enum: [medical, security, vehicle_breakdown, natural_disaster]
+        status:
+          type: string
+          enum: [active, resolved, cancelled]
+        location:
+          $ref: '#/components/schemas/Coordinates'
+        description:
+          type: string
+        responders:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+              type:
+                type: string
+              status:
+                type: string
+        timestamp:
+          type: string
+          format: date-time
+
+paths:
+  /auth:
+    post:
+      tags:
+        - Authentication
+      summary: Authenticate user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+                deviceId:
+                  type: string
+      responses:
+        '200':
+          description: Authentication successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+                  refreshToken:
+                    type: string
+                  user:
+                    $ref: '#/components/schemas/User'
+
+  /auth/refresh:
+    post:
+      tags:
+        - Authentication
+      summary: Refresh authentication token
+      security:
+        - BearerAuth: []
+      responses:
+        '200':
+          description: Token refreshed successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+
+  /users:
+    post:
+      tags:
+        - Users
+      summary: Create new user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '201':
+          description: User created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+
+    get:
+      tags:
+        - Users
+      summary: List users
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: role
+          in: query
+          schema:
+            type: string
+        - name: status
+          in: query
+          schema:
+            type: string
+        - name: page
+          in: query
+          schema:
+            type: integer
+        - name: limit
+          in: query
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: List of users
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+
+  /users/{userId}:
+    get:
+      tags:
+        - Users
+      summary: Get user details
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: User details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+
+    put:
+      tags:
+        - Users
+      summary: Update user details
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '200':
+          description: User updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+
+  /deliveries:
+    post:
+      tags:
+        - Deliveries
+      summary: Create delivery request
+      security:
+        - BearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DeliveryRequest'
+      responses:
+        '201':
+          description: Delivery request created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeliveryRequest'
+
+    get:
+      tags:
+        - Deliveries
+      summary: List deliveries
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: status
+          in: query
+          schema:
+            type: string
+        - name: type
+          in: query
+          schema:
+            type: string
+        - name: fromDate
+          in: query
+          schema:
+            type: string
+            format: date
+        - name: toDate
+          in: query
+          schema:
+            type: string
+            format: date
+        - name: page
+          in: query
+          schema:
+            type: integer
+        - name: limit
+          in: query
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: List of deliveries
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DeliveryRequest'
+
+  /deliveries/{deliveryId}:
+    get:
+      tags:
+        - Deliveries
+      summary: Get delivery details
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: deliveryId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Delivery details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeliveryRequest'
+
+    put:
+      tags:
+        - Deliveries
+      summary: Update delivery status
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: deliveryId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: string
+                location:
+                  $ref: '#/components/schemas/Coordinates'
+                notes:
+                  type: string
+      responses:
+        '200':
+          description: Delivery updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeliveryRequest'
+
+  /deliveries/{deliveryId}/tracking:
+    get:
+      tags:
+        - Tracking
+      summary: Get delivery tracking information
+      parameters:
+        - name: deliveryId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Tracking information
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Tracking'
+
+  /payments:
+    post:
+      tags:
+        - Payments
+      summary: Process payment
+      security:
+        - BearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Payment'
+      responses:
+        '201':
+          description: Payment processed successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Payment'
+
+  /payments/{paymentId}:
+    get:
+      tags:
+        - Payments
+      summary: Get payment details
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: paymentId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Payment details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Payment'
+
+  /emergency:
+    post:
+      tags:
+        - Emergency
+      summary: Report emergency
+      security:
+        - BearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Emergency'
+      responses:
+        '201':
+          description: Emergency reported successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Emergency'
+
+  /emergency/{emergencyId}:
+    put:
+      tags:
+        - Emergency
+      summary: Update emergency status
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: emergencyId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: string
+                responderNotes:
+                  type: string
+      responses:
+        '200':
+          description: Emergency status updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Emergency'
+
+  /analytics/deliveries:
+    get:
+      tags:
+        - Analytics
+      summary: Get delivery analytics
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: fromDate
+          in: query
+          schema:
+            type: string
+            format: date
+        - name: toDate
+          in: query
+          schema:
+            type: string
+            format: date
+        - name: groupBy
+          in: query
+          schema:
+            type: string
+            enum: [day, week, month]
+      responses:
+        '200':
+          description: Delivery analytics
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  totalDeliveries:
+                    type: integer
+                  completedDeliveries:
+                    type: integer
+                  averageDeliveryTime:
+                    type: number
+                  revenue:
+                    type: number
+                  trends:
+                    type: array
+                    items:
+                      type: object
+
+  /analytics/drivers:
+    get:
+      tags:
+        - Analytics
+      summary: Get driver analytics
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: driverId
+          in: query
+          schema:
+            type: string
+        - name: fromDate
+          in: query
+          schema:
+            type: string
+            format: date
+        - name: toDate
+          in: query
+          schema:
+            type: string
+            format: date
+      responses:
+        '200':
+          description: Driver analytics
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  totalDeliveries:
+                    type: integer
+                  averageRating:
+                    type: number
+                  totalEarnings:
+                    type: number
+                  performance:
+                    type: object
+
+security:
+  - BearerAuth: []
+  - ApiKeyAuth: []

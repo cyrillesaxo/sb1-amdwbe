@@ -1,0 +1,87 @@
+{
+  "common": {
+    "appName": "GoPack",
+    "loading": "Ń ṣiṣẹ́...",
+    "error": "Àṣìṣe",
+    "success": "Àṣeyọrí",
+    "save": "Fipamọ́",
+    "cancel": "Parẹ́",
+    "delete": "Pa rẹ́",
+    "edit": "Ṣàtúnṣe",
+    "create": "Ṣẹ̀dá",
+    "submit": "Fifiránṣẹ́",
+    "back": "Padà",
+    "close": "Tì",
+    "language": "Èdè"
+  },
+  "navigation": {
+    "map": "Màáp",
+    "deliveries": "Ìfiránṣẹ́",
+    "history": "Ìtàn",
+    "integrations": "Ìsopọ̀",
+    "settings": "Ìṣètò",
+    "bids": "Ìdíyelé Mi"
+  },
+  "auth": {
+    "login": "Wọlé",
+    "logout": "Jáde",
+    "signup": "Forúkọsílẹ̀",
+    "email": "Ímeèlì",
+    "password": "Ọ̀rọ̀ìpamọ́",
+    "confirmPassword": "Ṣèdádàá Ọ̀rọ̀ìpamọ́",
+    "forgotPassword": "Gbàgbé Ọ̀rọ̀ìpamọ́?",
+    "createAccount": "Ṣẹ̀dá Àpamọ́",
+    "alreadyHaveAccount": "O ní àpamọ́ tẹ́lẹ̀?",
+    "dontHaveAccount": "O kò ní àpamọ́?"
+  },
+  "features": {
+    "realTimeTracking": {
+      "title": "Ìṣọ́ Lẹ́sẹ̀kẹsẹ̀",
+      "description": "Ṣàkósí ìfiránṣẹ́ rẹ ní àsìkò gangan pẹ̀lú ètò GPS wa"
+    },
+    "securePayments": {
+      "title": "Ìsanwó Aláàbò",
+      "description": "Àwọn ìsanwó rẹ ní àbò pẹ̀lú ìṣíṣẹ́ ìpamọ́ tó ga jùlọ"
+    },
+    "verifiedProviders": {
+      "title": "Olùpèsè Fífidájú",
+      "description": "Gbogbo olùfiránṣẹ́ ni a ti fídájú tí a sì ti ṣàlàyé"
+    }
+  },
+  "delivery": {
+    "title": "Ìṣàkóso Ìfiránṣẹ́",
+    "newRequest": "Ìbéèrè Ìfiránṣẹ́ Tuntun",
+    "tracking": "Ìtọ́pajú Ìfiránṣẹ́",
+    "pickupLocation": "Ibùdó Gbígbà",
+    "dropoffLocation": "Ibùdó Fífipamọ́",
+    "enterPickupAddress": "Tẹ àdírẹ́ẹ̀sì ibùdó gbígbà",
+    "enterDropoffAddress": "Tẹ àdírẹ́ẹ̀sì ibùdó fífipamọ́",
+    "packagePicture": "Àwòrán Ẹrù",
+    "uploadPicture": "Gbé àwòrán sókè",
+    "pictureRequirements": "PNG, JPG títí dé 5MB",
+    "removePicture": "Yọ àwòrán kúrò",
+    "vehiclePreference": "Ọkọ̀ tí O Fẹ́",
+    "weight": "Ìwọ̀n (kg)",
+    "description": "Àpèjúwe",
+    "enterDescription": "Àpèjúwe ẹrù",
+    "creatingRequest": "Ń ṣẹ̀dá Ìbéèrè...",
+    "createRequest": "Ṣẹ̀dá Ìbéèrè",
+    "vehicleTypes": {
+      "car": "Ọkọ̀",
+      "van": "Fáànù",
+      "truck": "Ọkọ̀ ẹrù",
+      "motorcycle": "Kẹ̀kẹ́"
+    },
+    "errors": {
+      "fileTooLarge": "Ìtóbi fáìlì gbọ́dọ̀ kéré ju 5MB lọ",
+      "mapUnavailable": "Iṣẹ́ màáp kò sí",
+      "invalidAddresses": "Àwọn àdírẹ́ẹ̀sì àìtọ́"
+    },
+    "status": {
+      "pending": "Ń dúró",
+      "inProgress": "Ń lọ́wọ́",
+      "completed": "Parí",
+      "cancelled": "Parẹ́"
+    }
+  }
+}

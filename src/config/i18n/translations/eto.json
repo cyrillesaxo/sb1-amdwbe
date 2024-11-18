@@ -1,0 +1,62 @@
+{
+  "common": {
+    "appName": "GoPack",
+    "loading": "Ke lode...",
+    "error": "Mbéb",
+    "success": "Mvôm",
+    "save": "Bágá",
+    "cancel": "Tɔ́g",
+    "delete": "Sílí",
+    "edit": "Kɔ́lɔ",
+    "create": "Kom",
+    "submit": "Lóm",
+    "back": "Búlán",
+    "close": "Dìb",
+    "language": "Nkɔ́bɔ"
+  },
+  "auth": {
+    "login": "Nyìí",
+    "logout": "Kóló",
+    "signup": "Tílí mìnìngá",
+    "email": "Émél",
+    "password": "Nsímá",
+    "confirmPassword": "Bɔ́mɔ́ nsímá",
+    "createAccount": "Kom konte"
+  },
+  "delivery": {
+    "title": "Nkéní bìwòm",
+    "newRequest": "Fé nkéní",
+    "tracking": "Téb nkéní",
+    "pickupLocation": "Vóm nkéní",
+    "dropoffLocation": "Vóm nlóm",
+    "enterPickupAddress": "Tílí vóm nkéní",
+    "enterDropoffAddress": "Tílí vóm nlóm",
+    "packagePicture": "Fòtó bìwòm",
+    "uploadPicture": "Bágá fòtó",
+    "pictureRequirements": "PNG, JPG sí 5MB",
+    "removePicture": "Sílí fòtó",
+    "vehiclePreference": "Mǒt nkéní",
+    "weight": "Mvɛ̌d (kg)",
+    "description": "Nkǎn",
+    "enterDescription": "Tílí nkǎn bìwòm",
+    "creatingRequest": "Á ngá kom...",
+    "createRequest": "Kom nkéní",
+    "vehicleTypes": {
+      "car": "Mǒt",
+      "van": "Mǒt nlóm",
+      "truck": "Mǒt nnɛ́n",
+      "motorcycle": "Mǒt mbɔ́g"
+    },
+    "errors": {
+      "fileTooLarge": "Mvɛ̌d fàyl á yǎ tɔ́ 5MB",
+      "mapUnavailable": "Kálát vóm kě bé",
+      "invalidAddresses": "Vóm á sès mvɔ́é"
+    },
+    "status": {
+      "pending": "A ngá téb",
+      "inProgress": "A ngá kè",
+      "completed": "A mán",
+      "cancelled": "A tɔ́g"
+    }
+  }
+}

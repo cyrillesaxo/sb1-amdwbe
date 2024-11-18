@@ -1,0 +1,46 @@
+{
+  "common": {
+    "appName": "GoPack",
+    "loading": "Na-ebubata...",
+    "error": "Mperi",
+    "success": "Ọganihu",
+    "save": "Chekwa",
+    "cancel": "Kagbuo",
+    "delete": "Hichapụ",
+    "edit": "Dezie",
+    "create": "Mepụta",
+    "submit": "Nyefee",
+    "back": "Laghachi",
+    "close": "Mechie",
+    "language": "Asụsụ"
+  },
+  "auth": {
+    "login": "Banye",
+    "logout": "Pụọ",
+    "signup": "Debanye aha",
+    "email": "Email",
+    "password": "Okwuntughe",
+    "confirmPassword": "Kwenye Okwuntughe",
+    "forgotPassword": "Chefuru Okwuntughe?",
+    "createAccount": "Mepụta Akaụntụ",
+    "alreadyHaveAccount": "Ị nwere akaụntụ?",
+    "dontHaveAccount": "Ị nweghị akaụntụ?"
+  },
+  "user": {
+    "role": {
+      "sender": "Onye na-ezipu",
+      "bidder": "Onye na-ebufe"
+    }
+  },
+  "delivery": {
+    "title": "Njikwa Mbufe",
+    "newRequest": "Arịrịọ Mbufe Ọhụrụ",
+    "tracking": "Na-esochi Mbufe",
+    "status": {
+      "pending": "Na-eche",
+      "inProgress": "Na-aga n'ihu",
+      "completed": "Emechara",
+      "cancelled": "Kagburu"
+    }
+  }
+}

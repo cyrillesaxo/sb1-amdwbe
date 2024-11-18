@@ -1,0 +1,70 @@
+{
+  "common": {
+    "appName": "GoPack",
+    "loading": "E wandi...",
+    "error": "Mbéambe",
+    "success": "E bé nɔndi",
+    "save": "Nɔngisé",
+    "cancel": "Kwésé",
+    "delete": "Sósé",
+    "edit": "Léndé",
+    "create": "Pángá",
+    "submit": "Lómá",
+    "back": "Búsá",
+    "close": "Díbá",
+    "language": "Bwambo"
+  },
+  "auth": {
+    "login": "Ingéá",
+    "logout": "Bússá",
+    "signup": "Tílá mɔndi",
+    "email": "Émél",
+    "password": "Kwálísáni",
+    "confirmPassword": "Bɔ́ngisé kwálísáni",
+    "forgotPassword": "O bɔí kwálísáni?",
+    "createAccount": "Pángá kálatí",
+    "alreadyHaveAccount": "O bénɛ kálatí?",
+    "dontHaveAccount": "O tíngí kálatí?"
+  },
+  "user": {
+    "role": {
+      "sender": "Mólómí",
+      "bidder": "Mwéndí"
+    }
+  },
+  "profile": {
+    "viewProfile": "Éné kálatí",
+    "editProfile": "Léndé kálatí",
+    "tabs": {
+      "history": "Mbúsá",
+      "details": "Mambá",
+      "payments": "Máwútá",
+      "settings": "Ndɔ́ngámɛnɛ"
+    },
+    "address": {
+      "title": "Wásí",
+      "street": "Njelá",
+      "city": "Mbóká",
+      "state": "Mbúsá",
+      "zip": "Númɛ́lɔ wásí",
+      "country": "Kéndí"
+    }
+  },
+  "delivery": {
+    "title": "Ndɔ́ngámɛnɛ ya mawéndí",
+    "newRequest": "Péé wéndí",
+    "tracking": "Bíá wéndí",
+    "status": {
+      "pending": "E wandi téma",
+      "inProgress": "E wandi kɛ",
+      "completed": "E síbí",
+      "cancelled": "E kwésí"
+    }
+  },
+  "integration": {
+    "title": "Mabɔ́ngisán",
+    "connect": "Tíngá",
+    "disconnect": "Káká",
+    "settings": "Ndɔ́ngámɛnɛ"
+  }
+}
